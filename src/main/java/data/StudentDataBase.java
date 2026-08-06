@@ -2,8 +2,13 @@ package data;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Supplier;
 
 public class StudentDataBase {
+
+    public static Supplier<Student> studentSupplier = () ->{
+        return new Student("Emily",3,4.0,"female", Arrays.asList("swimming", "gymnastics","aerobics"));
+    };
 
     /**
      * Total of 6 students in the database.
